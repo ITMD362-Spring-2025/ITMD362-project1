@@ -36,3 +36,10 @@ input, select, button {
   border-radius: 4px;
 }
   
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+  
