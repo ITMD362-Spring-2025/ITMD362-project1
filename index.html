@@ -8,4 +8,31 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="script.js" async></script>
   </head>
+
+  <body>
+    <header>
+      <h1>Join Our Game Crew</h1>
+    </header>
+    <main>
+      <form id="signup-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="interest">Interest:</label>
+        <select id="interest" name="interest">
+          <option value="design">Design</option>
+          <option value="development">Development</option>
+          <option value="marketing">Marketing</option>
+        </select>
+        
+        <button type="submit">Sign Up</button>
+      </form>
+    </main>
+  </body>
 </html>
