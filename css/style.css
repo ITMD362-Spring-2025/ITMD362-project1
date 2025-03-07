@@ -1,16 +1,18 @@
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  color: #333;
-  background-color: #f4f4f4;
+  color: #cae9ea;
+  background-color: #273b40;
   margin: 0;
   padding: 0;
 }
   
 header {
-  background-color: #333;
+  
+  background-color: #208c8c;
   color: #fff;
   padding: 1rem;
+  font-size: 20px;
   text-align: center;
 }
   
@@ -18,7 +20,7 @@ form {
   max-width: 400px;
   margin: 2rem auto;
   padding: 1rem;
-  background-color: #fff;
+  background-color: #1d1d1d;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
