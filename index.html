@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up for Our Beta Test</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap">
-    <script src="script.js" async></script>
+    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -16,31 +16,28 @@
       <h1>Join Our Game Crew</h1>
     </header>
     <main>
-      <form id="signup-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <div class=container></div>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-  
-        <div class=container></div>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        
-        <div class=container></div>
-
-        <label for="interest">Interest:</label>
-        <select id="interest" name="interest">
-          <option value="design">Design</option>
-          <option value="development">Development</option>
-          <option value="marketing">Marketing</option>
-        </select>
-        
-        <div class=container></div>
-
+      <form id="signup-form" method="get" action="#null" autocomplete="on">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="8">
+        </div>
+        <div class="form-group">
+          <label for="interest">Interest:</label>
+          <select id="interest" name="interest">
+            <option value="" disabled selected>Select your interest</option>
+            <option value="design">Design</option>
+            <option value="development">Development</option>
+            <option value="marketing">Marketing</option>
+          </select>
+        </div>
         <button type="submit">Sign Up</button>
       </form>
     </main>
